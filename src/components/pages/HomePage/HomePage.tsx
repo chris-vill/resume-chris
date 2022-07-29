@@ -1,62 +1,63 @@
 import Image from 'next/image'
-import styles from 'styles/Home.module.css'
 
-export function HomePage() {
+import * as SC from "./styled-components"
+
+function HomePage() {
   return <>
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+    <SC.Container>
+      <SC.Main >
+        <SC.Title>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        </SC.Title>
 
-        <p className={styles.description}>
+        <SC.Description>
           Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+          <code>pages/index.js</code>
+        </SC.Description>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+        <SC.Grid>
+          <SC.Card href="https://nextjs.org/docs">
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          </SC.Card>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <SC.Card href="https://nextjs.org/learn">
             <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          </SC.Card>
 
-          <a
+          <SC.Card
             href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
           >
             <h2>Examples &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          </SC.Card>
 
-          <a
+          <SC.Card
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
           >
             <h2>Deploy &rarr;</h2>
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
-          </a>
-        </div>
-      </main>
+          </SC.Card>
+        </SC.Grid>
+      </SC.Main>
 
-      <footer className={styles.footer}>
+      <SC.Footer>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <span className={styles.logo}>
+          <SC.Logo>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          </SC.Logo>
         </a>
-      </footer>
-    </div>
+      </SC.Footer>
+    </SC.Container>
   </>
 }
+
+export { HomePage };
