@@ -3,7 +3,7 @@ import type { HTMLAttributes, ReactNode } from "react";
 import styled from "@emotion/styled";
 
 function Grid(P: GridProps) {
-  const StyledParent = styled.div`
+  const Parent = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,9 +18,9 @@ function Grid(P: GridProps) {
     }
   `
   return <>
-    <StyledParent className="grid">
+    <Parent className="grid">
       {P.children}
-    </StyledParent>
+    </Parent>
   </>
 };
 

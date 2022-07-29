@@ -4,18 +4,18 @@ import styled from "@emotion/styled";
 import { css } from "@emotion/react";
 
 function Description(P: DescriptionProps) {
-  const StyledParent = styled.p`
+  const Parent = styled.p`
     margin: 4rem 0;
     line-height: 1.5;
     font-size: 1.5rem;
     text-align: center;
 
-    ${codeStyles}
+    ${childCode}
   `
   return <>
-    <StyledParent className="description">
+    <Parent className="description">
       {P.children}
-    </StyledParent>
+    </Parent>
   </>
 };
 
@@ -23,7 +23,7 @@ export {
   Description
 };
 
-const codeStyles = css`
+const childCode = css`
   code {
     background: #fafafa;
     border-radius: 5px;

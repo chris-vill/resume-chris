@@ -4,7 +4,7 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 function Footer(P: FooterProps) {
-  const StyledParent = styled.footer`
+  const Parent = styled.footer`
     display: flex;
     flex: 1;
     padding: 2rem 0;
@@ -12,7 +12,7 @@ function Footer(P: FooterProps) {
     justify-content: center;
     align-items: center;
 
-    ${aStyles}
+    ${childA}
 
     @media (prefers-color-scheme: dark) {
       & {
@@ -21,13 +21,13 @@ function Footer(P: FooterProps) {
     }
   `
   return <>
-    <StyledParent>
+    <Parent>
       {P.children}
-    </StyledParent>
+    </Parent>
   </>
 }
 
-const aStyles = css`
+const childA = css`
   a {
     display: flex;
     justify-content: center;

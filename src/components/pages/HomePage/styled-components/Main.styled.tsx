@@ -3,7 +3,7 @@ import type { HTMLAttributes, ReactNode } from "react";
 import styled from "@emotion/styled";
 
 function Main(P: MainProps) {
-  const StyledParent = styled.main`
+  const Parent = styled.main`
     min-height: 100vh;
     padding: 4rem 0;
     flex: 1;
@@ -14,9 +14,9 @@ function Main(P: MainProps) {
   `;
 
   return <>
-    <StyledParent>
+    <Parent>
       {P.children}
-    </StyledParent>
+    </Parent>
   </>
 };
 

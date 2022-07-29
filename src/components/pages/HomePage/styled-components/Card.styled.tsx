@@ -1,13 +1,13 @@
 import type { AnchorHTMLAttributes, ReactNode } from "react";
 
-import styled from "@emotion/styled";
 import { css } from "@emotion/react";
+import styled from "@emotion/styled";
 import { omit } from "lodash";
 
 function Card(P: CardProps) {
   const htmlAttr = omit(P, ["children"]);
 
-  const StyledParent = styled.a`
+  const Parent = styled.a`
     margin: 1rem;
     padding: 1.5rem;
     text-align: left;
@@ -18,8 +18,8 @@ function Card(P: CardProps) {
     transition: color 0.15s ease, border-color 0.15s ease;
     max-width: 300px;
 
-    ${h2Styles}
-    ${pStyles}
+    ${childH2}
+    ${childP}
 
     &:hover,
     &:focus,
@@ -35,20 +35,20 @@ function Card(P: CardProps) {
     }
   `
   return <>
-    <StyledParent className="card" {...htmlAttr}>
+    <Parent className="card" {...htmlAttr}>
       {P.children}
-    </StyledParent>
+    </Parent>
   </>
 };
 
-const h2Styles = css`
+const childH2 = css`
   h2 {
     margin: 0 0 1rem 0;
     font-size: 1.5rem;
   }
 `
 
-const pStyles = css`
+const childP = css`
   p {
     margin: 0;
     font-size: 1.25rem;

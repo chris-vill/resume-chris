@@ -4,23 +4,23 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 function Title(P: TitleProps) {
-  const StyledParent = styled.h1`
+  const Parent = styled.h1`
     margin: 0;
     line-height: 1.15;
     font-size: 4rem;
     text-align: center;
 
-    ${aStyles}
+    ${childA}
   `;
 
   return <>
-    <StyledParent className="title">
+    <Parent className="title">
       {P.children}
-    </StyledParent>
+    </Parent>
   </>
 }
 
-const aStyles = css`
+const childA = css`
   a {
     color: #0070f3;
     text-decoration: none;

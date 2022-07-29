@@ -1,24 +1,24 @@
-import { HTMLAttributes, ReactNode } from "react";
+import type { HTMLAttributes, ReactNode } from "react";
 
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 function Logo(P: LogoProps) {
-  const StyledParent = styled.span`
+  const Parent = styled.span`
     height: 1em;
     margin-left: 0.5rem;
 
-    ${imgStyles}
+    ${childImg}
   `;
 
   return <>
-    <StyledParent className="logo">
+    <Parent className="logo">
       {P.children}
-    </StyledParent>
+    </Parent>
   </>
 }
 
-const imgStyles = css`
+const childImg = css`
   @media (prefers-color-scheme: dark) {
     img {
       filter: invert(1);

@@ -3,13 +3,13 @@ import type { HTMLAttributes, ReactNode } from "react";
 import styled from "@emotion/styled";
 
 export default function Container(P: ContainerProps) {
-  const StyledParent = styled.div`
+  const Parent = styled.div`
     padding: 0 2rem;
   `
   return <>
-    <StyledParent className="container">
+    <Parent className="container">
       {P.children}
-    </StyledParent>
+    </Parent>
   </>
 };
 
