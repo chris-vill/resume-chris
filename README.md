@@ -1,23 +1,38 @@
 ## ToDo
 
+- add Bun
 - add Prettier
 - add ESLint
 - add Storybook
+- add Chromatic
 
 ## Setup
 
 ### Tools
 
 - VS Code (highly recommended)
+- JavaScript and TypeScript Nightly (VS Code extension, please follow their instructions)
 - PNPM
+- Bun
+- Prettier
+- ESLint
+- Chromatic
 
-### VS Code Extensions (required)
+### Library Dependencies
 
-- JavaScript and TypeScript Nightly (please follow their instructions)
+- Next JS v12
+- React v18
+- Emotion
+- Lodash
+- Storybook
 
 ---
 
 ## Programming Style Guide
+
+### Software Architecture
+
+We use a modified version of Atomic Design by Brad Frost
 
 ### Styling Components
 
