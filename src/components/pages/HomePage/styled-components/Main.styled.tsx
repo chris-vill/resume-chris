@@ -4,7 +4,6 @@ import styled from "@emotion/styled";
 
 function Main(P: MainProps) {
   const Parent = styled.main`
-    min-height: 100vh;
     padding: 4rem 0;
     flex: 1;
     display: flex;

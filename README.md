@@ -1,3 +1,9 @@
+## ToDo
+
+- add Prettier
+- add ESLint
+- add Storybook
+
 ## Setup
 
 ### Tools
