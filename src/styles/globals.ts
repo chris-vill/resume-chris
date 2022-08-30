@@ -1,12 +1,18 @@
 import { css } from "@emotion/react";
 
+import { colors } from "./variables/colors";
+
 const globalStyles = css`
+  :root {
+    ${colors}
+  }
+
   html,
   body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+      Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   a {
@@ -20,13 +26,14 @@ const globalStyles = css`
 
   @media (prefers-color-scheme: dark) {
     html {
-      color-scheme: dark;
+      /* color-scheme: dark; */
     }
     body {
-      color: white;
-      background: black;
+      /* color: white; */
+      /* background: black; */
     }
   }
-`
+`;
 
 export { globalStyles };
+

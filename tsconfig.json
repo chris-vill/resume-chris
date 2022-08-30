@@ -17,10 +17,10 @@
     "noEmit": true,
     "paths": {
       "@components": [
-        "components/index"
+        "components/index",
       ],
-      "@components/*": [
-        "components/*"
+      "@styles": [
+        "styles/index"
       ]
     },
     "resolveJsonModule": true,

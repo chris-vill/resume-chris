@@ -1,0 +1,142 @@
+{
+  "name": "Christopher Villaran",
+  "role": "Full Stack Web Developer",
+  "description": "Frontend Web Developer with more than 5 years of experience in developing user interfaces, maintaining legacy codebase, debugging user reported issues and testing code changes for 5 Chrome Extensions that provided CRM integrations in Gmail. With these amount of experiences, I believe that there are still a lot of room for me to grow in my career as a Web Developer. And joining your team will help me further develop my skills and thrive in my field of expertise.",
+  "contact": [
+    {
+      "label": "LinkedIn",
+      "value": "https://www.linkedin.com/in/christopher-villaran",
+      "type": "linkedin",
+      "is_link": true
+    },
+    {
+      "label": "GitHub",
+      "value": "https://github.com/chris-vill",
+      "type": "github",
+      "is_link": true
+    },
+    {
+      "label": "HackerRank",
+      "value": "hackerrank.com/chrisvill",
+      "type": "hackerrank",
+      "is_link": true
+    },
+    {
+      "label": "villaran.christopher@gmail.com",
+      "value": "villaran.christopher@gmail.com",
+      "type": "email",
+      "is_link": false
+    },
+    {
+      "label": "+639294130304",
+      "value": "+639294130304",
+      "type": "mobile",
+      "is_link": false
+    }
+  ],
+  "experience": [
+    {
+      "title": "Fullstack Web Developer",
+      "company": "SwapooLabs",
+      "date": "6/2021 - 08/2022",
+      "location": "Taguig City, Philippines",
+      "points": [
+        "Created custom policies in Azure AD B2C (Identity Framework) for implementing SSO to be used by our users",
+        "Implemented usage of Storybook for UI/UX documentation",
+        "Refactored Frontend codebase to follow Atomic Design which is highly recommended when using Storybook",
+        "Occasionally presented our team's accomplishments in sprint reviews",
+        "Lead the training for our team's Fullstack Web Developer interns on the Frontend side"
+      ]
+    },
+    {
+      "title": "Frontend Web Developer",
+      "company": "SugarCRM",
+      "date": "3/2019 - 9/2020",
+      "location": "Quezon City, Philippines (Remote)",
+      "points": [
+        "Contributed to the development of Sugar Connect (version 2 of Collabspot Classic)",
+        "Maintained 4 versions of Collabspot Classic (Collabspot for Sugar 7+, Collabspot for Sugar 6, Collabspot for Salesforce, Collabspot for Highrise)",
+        "Implemented feature requests from several users both regular and VIP (Gordon Foods, Epidemic Sound, Sanmina, etc.)",
+        "Created an end-to-end test automation as a proof of concept using Protractor"
+      ]
+    },
+    {
+      "title": "Frontend Web Developer",
+      "company": "Collabspot",
+      "date": "5/2015 - 3/2019",
+      "location": "Quezon City, Philippines (Remote)",
+      "points": [
+        "Maintained 4 versions of Collabspot Classic (Collabspot for Sugar 7+, Collabspot for Sugar 6, Collabspot for Salesforce, Collabspot for Highrise)",
+        "Implemented feature requests from several users both regular and VIP (Gordon Foods, Epidemic Sound, etc.)"
+      ]
+    }
+  ],
+  "technologies": [
+    "VS Code",
+    "Atom",
+    "JavaScript",
+    "React.js",
+    "HTML 5",
+    "CSS 3",
+    "Next.js",
+    "Chakra UI",
+    "Sass",
+    "Styled Components",
+    "TypeScript",
+    "Storybook",
+    "Postman",
+    "REST",
+    "Azure AD B2C (Identity Framework)",
+    "Marionette.js",
+    "SugarCRM API",
+    "Chrome Extensions",
+    "Backbone.js"
+  ],
+  "technnical_skills": [
+    "Source Control Management",
+    "Agile",
+    "Functional Programming",
+    "Scrum",
+    "Design Patterns",
+    "Software Testing"
+  ],
+  "soft_skills": [
+    "Patience",
+    "Creativity",
+    "Adaptability",
+    "Critical Thinking",
+    "Inquisitiveness",
+    "Approachability",
+    "Accountability",
+    "Communication",
+    "Collaboration"
+  ],
+  "projects": [
+    {
+      "name": "My Resume",
+      "repository": "github.com/chris-vill/resume-chris",
+      "link": "",
+      "points": [
+        "This project contains the code for this resume",
+        "Atomic Design Architecture",
+        "Storybook for UI/UX documentation"
+      ]
+    },
+    {
+      "name": "Simple Calculator",
+      "repository": "github.com/chris-vill/react-simple-calculator",
+      "link": "",
+      "points": [
+        "Simple calculator app created for learning React.js"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Bachelor of Science in Computer Engineering",
+      "institution": "Polytechnic University of the Philippines",
+      "date": "6/2009 - 4/2015",
+      "location": "Sta. Mesa, Manila"
+    }
+  ]
+}
