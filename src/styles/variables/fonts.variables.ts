@@ -26,7 +26,7 @@ export const fonts = css`
   --fw-item-subheader: 400;
   --fw-item-body: 400;
   --fw-date: 400;
-  --fw-pill: 700;
+  --fw-pill: 400;
 
   --fs-page-header: normal;
   --fs-page-subheader: normal;

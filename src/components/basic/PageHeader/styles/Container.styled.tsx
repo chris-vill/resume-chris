@@ -4,11 +4,15 @@ import styled from "@emotion/styled";
 
 function Container(P: ContainerProps) {
   const Parent = styled.div`
-    padding: 0 2rem;
+    background-color: var(--clr-primary);
+    border: 2px solid var(--clr-accent);
+    border-radius: 6px;
+    padding: 18px 64px;
   `;
+
   return (
     <>
-      <Parent className="container">{P.children}</Parent>
+      <Parent className="page-header-container">{P.children}</Parent>
     </>
   );
 }
