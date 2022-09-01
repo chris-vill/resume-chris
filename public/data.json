@@ -1,37 +1,37 @@
 {
   "name": "Christopher Villaran",
-  "role": "Full Stack Web Developer",
-  "description": "Frontend Web Developer with more than 5 years of experience in developing user interfaces, maintaining legacy codebase, debugging user reported issues and testing code changes for 5 Chrome Extensions that provided CRM integrations in Gmail. With these amount of experiences, I believe that there are still a lot of room for me to grow in my career as a Web Developer. And joining your team will help me further develop my skills and thrive in my field of expertise.",
+  "role": "Senior Fullstack Web Developer",
   "contact": [
     {
       "label": "LinkedIn",
-      "value": "https://www.linkedin.com/in/christopher-villaran",
-      "type": "linkedin",
-      "is_link": true
-    },
-    {
-      "label": "GitHub",
-      "value": "https://github.com/chris-vill",
-      "type": "github",
-      "is_link": true
+      "value": "/christopher-villaran",
+      "link": "https://www.linkedin.com/in/christopher-villaran",
+      "type": "linkedin"
     },
     {
       "label": "HackerRank",
-      "value": "hackerrank.com/chrisvill",
+      "value": "/chrisvill",
+      "link": "https://www.hackerrank.com/chrisvill",
       "type": "hackerrank",
       "is_link": true
     },
     {
-      "label": "villaran.christopher@gmail.com",
-      "value": "villaran.christopher@gmail.com",
-      "type": "email",
-      "is_link": false
+      "label": "GitHub",
+      "value": "/chris-vill",
+      "link": "https://github.com/chris-vill",
+      "type": "github"
     },
     {
-      "label": "+639294130304",
+      "label": "Mobile",
       "value": "+639294130304",
-      "type": "mobile",
-      "is_link": false
+      "link": null,
+      "type": "mobile"
+    },
+    {
+      "label": "Email",
+      "value": "villaran.christopher@gmail.com",
+      "link": null,
+      "type": "email"
     }
   ],
   "experience": [
@@ -41,11 +41,11 @@
       "date": "6/2021 - 08/2022",
       "location": "Taguig City, Philippines",
       "points": [
-        "Created custom policies in Azure AD B2C (Identity Framework) for implementing SSO to be used by our users",
-        "Implemented usage of Storybook for UI/UX documentation",
-        "Refactored Frontend codebase to follow Atomic Design which is highly recommended when using Storybook",
-        "Occasionally presented our team's accomplishments in sprint reviews",
-        "Lead the training for our team's Fullstack Web Developer interns on the Frontend side"
+        "Created and managed 12 custom policies in Azure AD B2C (Identity Framework) for implementing SSO across 2 major products",
+        "Implemented usage of Storybook that documented 100% of all components in the codebase",
+        "Refactored roughly 90% of Frontend codebase to follow Atomic Design which is highly recommended when using Storybook",
+        "Taked turns in presenting our team's accomplishments in sprint reviews",
+        "Lead the training for our team's 2 Fullstack Web Developer Interns on the Frontend side"
       ]
     },
     {
@@ -54,10 +54,9 @@
       "date": "3/2019 - 9/2020",
       "location": "Quezon City, Philippines (Remote)",
       "points": [
-        "Contributed to the development of Sugar Connect (version 2 of Collabspot Classic)",
-        "Maintained 4 versions of Collabspot Classic (Collabspot for Sugar 7+, Collabspot for Sugar 6, Collabspot for Salesforce, Collabspot for Highrise)",
-        "Implemented feature requests from several users both regular and VIP (Gordon Foods, Epidemic Sound, Sanmina, etc.)",
-        "Created an end-to-end test automation as a proof of concept using Protractor"
+        "Contributed roughly 40% to the development of Sugar Connect (version 2 of Collabspot Classic)",
+        "Created an end-to-end test automation with roughly 25% coverage as a proof of concept using Protractor",
+        "Continuation of responsibilities from Collabspot, as the company has been acquired by SugarCRM"
       ]
     },
     {
@@ -67,7 +66,7 @@
       "location": "Quezon City, Philippines (Remote)",
       "points": [
         "Maintained 4 versions of Collabspot Classic (Collabspot for Sugar 7+, Collabspot for Sugar 6, Collabspot for Salesforce, Collabspot for Highrise)",
-        "Implemented feature requests from several users both regular and VIP (Gordon Foods, Epidemic Sound, etc.)"
+        "Implemented feature requests from several users both regular and VIP (Gordon Foods, Epidemic Sound, Sanmina, etc.)"
       ]
     }
   ],
@@ -115,19 +114,11 @@
     {
       "name": "My Resume",
       "repository": "github.com/chris-vill/resume-chris",
-      "link": "",
+      "design": "figma.com/file/p8V2utLD1a3oN9ujXemCug/Resume",
       "points": [
-        "This project contains the code for this resume",
-        "Atomic Design Architecture",
-        "Storybook for UI/UX documentation"
-      ]
-    },
-    {
-      "name": "Simple Calculator",
-      "repository": "github.com/chris-vill/react-simple-calculator",
-      "link": "",
-      "points": [
-        "Simple calculator app created for learning React.js"
+        "This project contains the codebase for this resume",
+        "The purpose of this project is to sharpen my skills in codebase architecture, use of Storybook, styled components, Atomic Design principles and also improve my understanding of basic UI/UX design",
+        "Technologies: TypeScript, React.js, Next.js, Storybook, Emotion, Atomic Design, Figma"
       ]
     }
   ],

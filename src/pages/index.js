@@ -9,22 +9,6 @@ export default function Home() {
 }
 
 /*
-  Header
-  - Name
-  - Role
-  - Description
-  - Contact
-
-  Left Col
-  - Technologies
-  - Technical Skills
-  - Soft Skills
-
-  Right Col 2
-  - Experience
-  - Projects
-  - Education
-
   Resume
   - above the fold
   - don't ignore cover letter
@@ -48,14 +32,5 @@ export default function Home() {
   - Accomplised [X] as measured by [Y] by doing [Z]
   - 475 to 600 words
   - remove buzzwords, fluff and cliches
-
-  old sahod
-  net = 59,243.4
-  gross = 80,000
-
-  new sahod
-  gross = 95,000
-
-  best sahod
-  gross = 100,000
 */
+

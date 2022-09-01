@@ -1,10 +1,12 @@
 import { css } from "@emotion/react";
 
-import { colors } from "./variables/colors";
+import { colors } from "./variables/colors.variables";
+import { fonts } from "./variables/fonts.variables";
 
 const globalStyles = css`
   :root {
     ${colors}
+    ${fonts}
   }
 
   html,
