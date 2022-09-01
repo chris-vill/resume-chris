@@ -1,9 +1,12 @@
 import { css } from "@emotion/react";
 
+import { reset } from "./vendors/reset";
 import { colors } from "./variables/colors.variables";
 import { fonts } from "./variables/fonts.variables";
 
 const globalStyles = css`
+  ${reset}
+
   :root {
     ${colors}
     ${fonts}
@@ -20,6 +23,12 @@ const globalStyles = css`
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  hr {
+    background-color: #000000;
+    border: none;
+    height: 1px;
   }
 
   * {

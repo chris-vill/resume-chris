@@ -7,8 +7,8 @@ export default {
   title: "Basic",
   component: Component,
   args: {
-    header: "Sample Header",
-    subheader: "Sample Subheader",
+    header: "Page Header",
+    subheader: "Page Subheader",
   },
   parameters: {
     layout: "centered",
