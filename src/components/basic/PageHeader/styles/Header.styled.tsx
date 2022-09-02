@@ -4,10 +4,11 @@ import styled from "@emotion/styled";
 import { fonts } from "@styles";
 
 function Header(P: HeaderProps) {
-  const Parent = styled.div`
+  const Parent = styled.h1`
     ${fonts.pageHeader}
 
     color: var(--clr-white);
+    line-height: 37px;
     text-align: center;
   `;
 

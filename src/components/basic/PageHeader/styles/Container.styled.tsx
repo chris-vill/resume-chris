@@ -7,6 +7,9 @@ function Container(P: ContainerProps) {
     background-color: var(--clr-primary);
     border: 2px solid var(--clr-accent);
     border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
     padding: 18px 64px;
   `;
 
