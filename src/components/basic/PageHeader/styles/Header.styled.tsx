@@ -8,7 +8,6 @@ function Header(P: HeaderProps) {
     ${fonts.pageHeader}
 
     color: var(--clr-white);
-    line-height: 37px;
     text-align: center;
   `;
 

@@ -37,9 +37,18 @@ export const fonts = css`
   --fs-date: italic;
   --fs-pill: normal;
 
+  --lh-page-header: 37px;
+  --lh-page-subheader: 16px;
+  --lh-section-header: 14px;
+  --lh-item-header: 14px;
+  --lh-item-subheader: 14px;
+  --lh-item-body: 11px;
+  --lh-date: 14px;
+  --lh-pill: 11px;
+
   --tt-page-header: none;
   --tt-page-subheader: uppercase;
-  --tt-section-header: none;
+  --tt-section-header: uppercase;
   --tt-item-header: none;
   --tt-item-subheader: none;
   --tt-item-body: none;

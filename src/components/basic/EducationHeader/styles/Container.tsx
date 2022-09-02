@@ -5,17 +5,20 @@ import { fonts } from "@styles";
 
 function Container(P: ContainerProps) {
   const Parent = styled.div`
-    ${fonts.pill}
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
 
-    background-color: var(--clr-primary-t20);
-    border-radius: 6px;
-    color: var(--clr-light);
-    padding: 4px 6px;
+    h4 {
+      ${fonts.itemHeader}
+
+      color: var(--clr-primary-s20);
+    }
   `;
 
   return (
     <>
-      <Parent className="pill-container">{P.children}</Parent>
+      <Parent className="education-header-container">{P.children}</Parent>
     </>
   );
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Icons as IconsComp } from "./Icons";
+import { Icons as Component } from "./Icons";
 
 export default {
   title: "Basic",
-  component: IconsComp,
+  component: Component,
   parameters: {
     design: {
       type: "figma",
@@ -13,9 +13,9 @@ export default {
     },
     layout: "centered",
   },
-} as ComponentMeta<typeof IconsComp>;
+} as ComponentMeta<typeof Component>;
 
-const Template: ComponentStory<typeof IconsComp> = (args) => <IconsComp />;
+const Template: ComponentStory<typeof Component> = (args) => <Component />;
 
 export const Icons = Template.bind({});
 Icons.args = {};

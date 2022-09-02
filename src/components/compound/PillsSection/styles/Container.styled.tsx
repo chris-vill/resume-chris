@@ -5,12 +5,8 @@ import { fonts } from "@styles";
 
 function Container(P: ContainerProps) {
   const Parent = styled.div`
-    ${fonts.pill}
-
-    background-color: var(--clr-primary-t20);
-    border-radius: 6px;
-    color: var(--clr-light);
-    padding: 4px 6px;
+    display: flex;
+    flex-direction: column;
   `;
 
   return (

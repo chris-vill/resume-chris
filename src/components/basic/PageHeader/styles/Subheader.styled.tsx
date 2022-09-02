@@ -8,7 +8,6 @@ function Subheader(P: SubheaderProps) {
     ${fonts.pageSubheader}
 
     color: var(--clr-light);
-    line-height: 16px;
     text-align: center;
   `;
 

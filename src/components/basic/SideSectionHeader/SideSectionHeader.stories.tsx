@@ -22,17 +22,17 @@ export default {
 const Template: ComponentStory<typeof Component> = (args) => {
   return (
     <>
-      <SampleSection>
+      <StoryContainer>
         <Component {...args} />
         <div className="sample-content-body">Sample Section Content</div>
-      </SampleSection>
+      </StoryContainer>
     </>
   );
 };
 
 export const SideSectionHeader = Template.bind({});
 
-const SampleSection = styled.div`
+const StoryContainer = styled.div`
   border: 2px solid #000000;
   display: flex;
   flex-direction: column;
