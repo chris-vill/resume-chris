@@ -1,6 +1,6 @@
+import styled from "@emotion/styled";
 import type { HTMLAttributes, ReactNode } from "react";
 
-import styled from "@emotion/styled";
 import { fonts } from "@styles";
 
 function Header(P: HeaderProps) {

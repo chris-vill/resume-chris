@@ -1,15 +1,21 @@
 import styled from "@emotion/styled";
+import { fonts } from "@styles";
 import type { HTMLAttributes, ReactNode } from "react";
 
 function Container(P: ContainerProps) {
   const Parent = styled.div`
-    align-items: center;
-    display: flex;
+    ${fonts.pill}
+
+    background: var(--clr-primary-t20);
+    border-radius: 6px;
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+    padding: 4px 6px;
   `;
 
   return (
     <>
-      <Parent className="side-section-header-container">{P.children}</Parent>
+      <Parent className="pill-container">{P.children}</Parent>
     </>
   );
 }

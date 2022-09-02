@@ -1,6 +1,5 @@
-import type { HTMLAttributes, ReactNode } from "react";
-
 import styled from "@emotion/styled";
+import type { HTMLAttributes } from "react";
 
 function Divider(P: DividerProps) {
   const Parent = styled.hr`

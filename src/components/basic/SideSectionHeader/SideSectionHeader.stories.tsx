@@ -11,6 +11,10 @@ export default {
     label: "Side Section Header",
   },
   parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/file/p8V2utLD1a3oN9ujXemCug/Resume?node-id=46%3A44",
+    },
     layout: "centered",
   },
 } as ComponentMeta<typeof Component>;

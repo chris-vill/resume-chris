@@ -12,8 +12,7 @@
       "label": "HackerRank",
       "value": "/chrisvill",
       "link": "https://www.hackerrank.com/chrisvill",
-      "type": "hackerrank",
-      "is_link": true
+      "type": "hackerrank"
     },
     {
       "label": "GitHub",

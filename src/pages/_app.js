@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Global } from "@emotion/react";
 
-import { globalStyles } from "styles";
+import { globalStyles } from "@styles";
 
 function MyApp({ Component, pageProps }) {
   return (

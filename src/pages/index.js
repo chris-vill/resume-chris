@@ -1,9 +1,10 @@
-import { Page } from "@components";
+import { Icons } from "@components";
 
 export default function Home() {
   return (
     <>
-      <Page.HomePage />
+      {/* <Page.HomePage /> */}
+      <Icons />
     </>
   );
 }
