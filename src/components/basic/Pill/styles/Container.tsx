@@ -6,9 +6,8 @@ function Container(P: ContainerProps) {
   const Parent = styled.div`
     ${fonts.pill}
 
-    background: var(--clr-primary-t20);
+    background-color: var(--clr-primary-t20);
     border-radius: 6px;
-    background-color: var(--clr-primary);
     color: var(--clr-light);
     padding: 4px 6px;
   `;
