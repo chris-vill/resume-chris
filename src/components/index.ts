@@ -1,3 +1,6 @@
-import { PageHeader } from "./basic/PageHeader/PageHeader";
+export * from "./basic/MainSectionHeader/MainSectionHeader";
+export * from "./basic/PageHeader/PageHeader";
+export * from "./basic/SideSectionHeader/SideSectionHeader";
 
-export { Pages } from "./pages/Page";
+export * from "./pages/Page";
+

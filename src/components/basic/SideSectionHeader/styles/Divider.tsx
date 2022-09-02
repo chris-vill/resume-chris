@@ -11,7 +11,7 @@ function Divider(P: DividerProps) {
 
   return (
     <>
-      <Parent className="main-section-header-divider" />
+      <Parent className="side-section-header-divider" />
     </>
   );
 }
