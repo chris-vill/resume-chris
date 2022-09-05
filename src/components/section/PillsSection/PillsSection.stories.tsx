@@ -5,7 +5,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { PillsSection as Component } from "./PillsSection";
 
 export default {
-  title: "Compound",
+  title: "Sections",
   component: Component,
   args: {
     label: "Manga",

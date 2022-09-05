@@ -13,7 +13,9 @@
     "noEmit": true,
     "paths": {
       "@components": ["components/index"],
-      "@styles": ["styles/index"]
+      "@constants": ["constants/index"],
+      "@styles": ["styles/index"],
+      "@types": ["types/index"]
     },
     "resolveJsonModule": true,
     "skipDefaultLibCheck": true,
