@@ -1,6 +1,6 @@
 import * as SC from "./styles";
 import { URLS } from "@constants";
-import * as T from "@types";
+import type * as T from "@types";
 
 function Icon(props: IconProps) {
   const { as } = props;

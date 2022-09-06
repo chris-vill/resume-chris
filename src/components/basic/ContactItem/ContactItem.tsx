@@ -27,7 +27,7 @@ function ContactItem(props: ContactItemProps) {
 
 export { ContactItem };
 
-type ContactItemProps = {
+export type ContactItemProps = {
   label: string;
   link: string | null;
   type: IconKeys;

@@ -1,3 +1,4 @@
+export * from "./basic/ContactItem/ContactItem";
 export * from "./basic/EducationHeader/EducationHeader";
 export * from "./basic/Icon/Icon";
 export * from "./basic/MainSectionHeader/MainSectionHeader";
