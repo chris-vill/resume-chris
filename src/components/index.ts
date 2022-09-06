@@ -6,7 +6,7 @@ export * from "./basic/PageHeader/PageHeader";
 export * from "./basic/Pill/Pill";
 export * from "./basic/SideSectionHeader/SideSectionHeader";
 
-export * from "./section/PillsSection/PillsSection";
+export * from "./section/Section";
 
 export * from "./pages/Page";
 

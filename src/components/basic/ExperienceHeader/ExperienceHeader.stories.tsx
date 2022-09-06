@@ -8,8 +8,8 @@ export default {
   title: "Basic",
   component: Component,
   args: {
-    course: "Bachelor of Science in Eldritch Horror",
-    institution: "University of H.P. Lovecraft",
+    company: "Eldritch Horror",
+    title: "Fiction Writer",
     location: "Providence, Rhode Island",
     date: "08/1890 - 03/1937",
   },
@@ -22,7 +22,7 @@ export default {
   },
 } as ComponentMeta<typeof Component>;
 
-const Template: ComponentStory<typeof Component> = (args) => <Component />;
+const Template: ComponentStory<typeof Component> = (args) => <Component {...args} />;
 
 export const ExperienceHeader = Template.bind({});
 ExperienceHeader.args = {};
