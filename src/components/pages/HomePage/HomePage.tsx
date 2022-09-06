@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 import * as SC from "./styled-components";
-import { Icons } from "@components";
+import { Icon } from "@components";
 
 function HomePage() {
   return (
     <>
-      <Icons as="email" />
+      <Icon as="email" />
     </>
   );
 }

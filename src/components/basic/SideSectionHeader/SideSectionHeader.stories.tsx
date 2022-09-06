@@ -1,3 +1,4 @@
+import { URLS } from "@constants";
 import styled from "@emotion/styled";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import React from "react";
@@ -13,7 +14,7 @@ export default {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/file/p8V2utLD1a3oN9ujXemCug/Resume?node-id=46%3A44",
+      url: URLS.FIGMA.SIDE_SECTION_HEADER,
     },
     layout: "centered",
   },

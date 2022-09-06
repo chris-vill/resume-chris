@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { EducationHeader as Component } from "./EducationHeader";
+import { ExperienceHeader as Component } from "./ExperienceHeader";
 import { URLS } from "@constants";
 
 export default {
@@ -16,14 +16,14 @@ export default {
   parameters: {
     design: {
       type: "figma",
-      url: URLS.FIGMA.EDUCATION_HEADER,
+      url: URLS.FIGMA.EXPERIENCE_HEADER,
     },
     layout: "centered",
   },
 } as ComponentMeta<typeof Component>;
 
-const Template: ComponentStory<typeof Component> = (args) => <Component {...args} />;
+const Template: ComponentStory<typeof Component> = (args) => <Component />;
 
-export const EducationHeader = Template.bind({});
-EducationHeader.args = {};
+export const ExperienceHeader = Template.bind({});
+ExperienceHeader.args = {};
 

@@ -1,7 +1,8 @@
-import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
+import React from "react";
 
 import { PageHeader as Component } from "./PageHeader";
+import { URLS } from "@constants";
 
 export default {
   title: "Basic",
@@ -13,7 +14,7 @@ export default {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/file/p8V2utLD1a3oN9ujXemCug/Resume?node-id=10%3A2",
+      url: URLS.FIGMA.PAGE_HEADER,
     },
     layout: "centered",
   },

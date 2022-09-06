@@ -3,6 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import React from "react";
 
 import { MainSectionHeader as Component } from "./MainSectionHeader";
+import { URLS } from "@constants";
 
 export default {
   title: "Basic",
@@ -13,7 +14,7 @@ export default {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/file/p8V2utLD1a3oN9ujXemCug/Resume?node-id=37%3A7",
+      url: URLS.FIGMA.MAIN_SECTION_HEADER,
     },
     layout: "centered",
   },

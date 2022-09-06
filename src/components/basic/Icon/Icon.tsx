@@ -1,19 +1,21 @@
 import { URLS } from "@constants";
-import { IconKeys } from "@types";
+import * as T from "@types";
 
-function Icons(props: IconProps) {
+function Icon(props: IconProps) {
   const { as } = props;
+
+  const svgKey = as.toUpperCase() as T.SvgKeys;
 
   return (
     <>
-      <img src={`${URLS.CLIENT}/SVGs/${as}.svg`} />
+      <img src={`${URLS.ASSETS.SVGS[svgKey]}`} />
     </>
   );
 }
 
-export { Icons };
+export { Icon };
 
 type IconProps = {
-  as: IconKeys;
+  as: T.IconKeys;
 };
 

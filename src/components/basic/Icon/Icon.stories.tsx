@@ -1,7 +1,8 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Icons as Component } from "./Icon";
+import { Icon as Component } from "./Icon";
+import { URLS } from "@constants";
 
 export default {
   title: "Basic/Icon",
@@ -9,7 +10,7 @@ export default {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/file/p8V2utLD1a3oN9ujXemCug/Resume?node-id=142%3A484",
+      url: URLS.FIGMA.ICONS,
     },
     layout: "centered",
   },

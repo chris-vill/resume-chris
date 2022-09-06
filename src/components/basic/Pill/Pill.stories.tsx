@@ -1,7 +1,8 @@
-import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
+import React from "react";
 
 import { Pill as Component } from "./Pill";
+import { URLS } from "@constants";
 
 export default {
   title: "Basic",
@@ -12,7 +13,7 @@ export default {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/file/p8V2utLD1a3oN9ujXemCug/Resume?node-id=50%3A20524",
+      url: URLS.FIGMA.PILL,
     },
     layout: "centered",
   },

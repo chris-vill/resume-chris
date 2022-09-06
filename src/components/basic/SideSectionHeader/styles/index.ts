@@ -1,4 +1,4 @@
-export * from "./Container";
-export * from "./Divider";
-export * from "./Header";
+export * from "./Container.styled";
+export * from "./Divider.styled";
+export * from "./Header.styled";
 

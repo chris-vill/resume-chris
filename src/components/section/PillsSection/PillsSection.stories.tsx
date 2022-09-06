@@ -1,8 +1,9 @@
-import React from "react";
 import styled from "@emotion/styled";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
+import React from "react";
 
 import { PillsSection as Component } from "./PillsSection";
+import { URLS } from "@constants";
 
 export default {
   title: "Sections",
@@ -24,7 +25,7 @@ export default {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/file/p8V2utLD1a3oN9ujXemCug/Resume?node-id=174%3A942",
+      url: URLS.FIGMA.PILLS_SECTION,
     },
     layout: "centered",
   },

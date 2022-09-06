@@ -1,4 +1,4 @@
-export * from "./Container";
-export * from "./Date";
-export * from "./Details";
+export * from "./Container.styled";
+export * from "./Date.styled";
+export * from "./Details.styled";
 
