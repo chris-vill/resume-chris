@@ -2,6 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { Typography as TypographyComp } from "./Typography";
+import { URLS } from "@constants";
 
 export default {
   title: "Style Guide",
@@ -9,7 +10,7 @@ export default {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/file/p8V2utLD1a3oN9ujXemCug/Resume?node-id=108%3A399",
+      url: URLS.FIGMA.TYPOGRAPHY,
     },
     layout: "centered",
   },
