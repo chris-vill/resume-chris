@@ -5,6 +5,7 @@ const URLS = {
   CLIENT,
   FIGMA: {
     COLORS: `${FIGMA_BASE}?node-id=8%3A2`,
+    CONTACTS: `${FIGMA_BASE}?node-id=50%3A4966`,
     EDUCATION_HEADER: `${FIGMA_BASE}?node-id=83%3A509`,
     EXPERIENCE_HEADER: `${FIGMA_BASE}?node-id=54%3A139`,
     ICONS: `${FIGMA_BASE}?node-id=142%3A484`,

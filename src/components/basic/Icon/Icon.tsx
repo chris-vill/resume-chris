@@ -1,3 +1,4 @@
+import * as SC from "./styles";
 import { URLS } from "@constants";
 import * as T from "@types";
 
@@ -8,7 +9,7 @@ function Icon(props: IconProps) {
 
   return (
     <>
-      <img src={`${URLS.ASSETS.SVGS[svgKey]}`} />
+      <SC.Container src={`${URLS.ASSETS.SVGS[svgKey]}`} />
     </>
   );
 }
