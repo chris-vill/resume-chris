@@ -13,6 +13,7 @@ const URLS = {
     PAGE_HEADER: `${FIGMA_BASE}?node-id=10%3A2`,
     PILL: `${FIGMA_BASE}?node-id=50%3A20524`,
     PILLS_SECTION: `${FIGMA_BASE}?node-id=174%3A942`,
+    PROJECTS_HEADER: `${FIGMA_BASE}?node-id=65%3A216`,
     SIDE_SECTION_HEADER: `${FIGMA_BASE}?node-id=46%3A44`,
     TYPOGRAPHY: `${FIGMA_BASE}?node-id=108%3A399`,
   },
