@@ -22,7 +22,7 @@ function ExperienceItem(props: ExperienceItemProps) {
 
 export { ExperienceItem };
 
-type ExperienceItemProps = T.ExperienceHeaderProps & {
+export type ExperienceItemProps = T.ExperienceHeaderProps & {
   details: string[];
 };
 
