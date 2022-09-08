@@ -24,7 +24,7 @@ function ProjectsHeader(props: ProjectsHeaderProps) {
 
 export { ProjectsHeader };
 
-type ProjectsHeaderProps = {
+export type ProjectsHeaderProps = {
   design: string;
   name: string;
   repository: string;
