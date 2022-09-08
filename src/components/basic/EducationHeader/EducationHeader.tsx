@@ -1,4 +1,4 @@
-import * as SC from "./styles";
+import * as SC from "./EducationHeader.styles";
 
 function EducationHeader(props: EducationHeaderProps) {
   const { course, institution, location, date } = props;
@@ -7,8 +7,8 @@ function EducationHeader(props: EducationHeaderProps) {
     <>
       <SC.Container>
         <h4>{course}</h4>
-        <SC.Details>{institution}</SC.Details>
-        <SC.Details>{location}</SC.Details>
+        <SC.Detail>{institution}</SC.Detail>
+        <SC.Detail>{location}</SC.Detail>
         <SC.Date>{date}</SC.Date>
       </SC.Container>
     </>

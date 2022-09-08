@@ -1,4 +1,4 @@
-import * as SC from "./styles";
+import * as SC from "./PageHeader.styles";
 
 function PageHeader(props: PageHeaderProps) {
   const { header, subheader } = props;
@@ -6,8 +6,8 @@ function PageHeader(props: PageHeaderProps) {
   return (
     <>
       <SC.Container>
-        <SC.Header>{header}</SC.Header>
-        <SC.Subheader>{subheader}</SC.Subheader>
+        <SC.Title>{header}</SC.Title>
+        <SC.Subtitle>{subheader}</SC.Subtitle>
       </SC.Container>
     </>
   );
@@ -19,3 +19,4 @@ type PageHeaderProps = {
   header: string;
   subheader: string;
 };
+

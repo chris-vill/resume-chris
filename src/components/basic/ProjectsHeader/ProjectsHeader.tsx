@@ -1,4 +1,4 @@
-import * as SC from "./styles";
+import * as SC from "./ProjectsHeader.styles";
 import { Icon } from "@components";
 
 function ProjectsHeader(props: ProjectsHeaderProps) {
@@ -9,7 +9,7 @@ function ProjectsHeader(props: ProjectsHeaderProps) {
       <SC.Container>
         <Icon as="star" />
         <SC.TextsContainer>
-          <SC.Header>{name}</SC.Header>
+          <SC.Label>{name}</SC.Label>
           <SC.Detail>
             repository: <SC.Link href={`https://${repository}`}>{repository}</SC.Link>
           </SC.Detail>

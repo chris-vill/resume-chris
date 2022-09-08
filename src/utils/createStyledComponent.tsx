@@ -8,21 +8,34 @@ import type { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react";
   link to bug: https://github.com/bashmish/es6-string-css/issues/6
 */
 
-function createStyledComponent<P, H>(
+function createStyledComponent<P, HE, HA extends HTMLAttributes<HE> = HTMLAttributes<HE>>(
   className: string,
-  StyledComponent: TStyledComponent<{}, DetailedHTMLProps<HTMLAttributes<H>, H>, {}>,
+  /*
+    FIXME:
+      turn this:
+        DetailedHTMLProps<HTMLAttributes<HE>, HE>
+      to this:
+        DetailedHTMLProps<HA, HE>
+  */
+  StyledComponent: TStyledComponent<{}, DetailedHTMLProps<HTMLAttributes<HE>, HE>, {}>,
   selfClosing: boolean = false
 ) {
-  return (P: StyledComponentProps) => {
+  return (props: StyledComponentProps) => {
+    const { children, ...otherProps } = props;
+
     return (
       <>
-        {selfClosing && <StyledComponent {...{ className }} />}
-        {!selfClosing && <StyledComponent {...{ className }}>{P.children}</StyledComponent>}
+        {selfClosing && <StyledComponent {...{ className }} {...otherProps} />}
+        {!selfClosing && (
+          <StyledComponent {...{ className }} {...otherProps}>
+            {children}
+          </StyledComponent>
+        )}
       </>
     );
   };
 
-  type StyledComponentProps = P & HTMLAttributes<H> & { children?: ReactNode };
+  type StyledComponentProps = P & HA & { children?: ReactNode };
 }
 
 export { createStyledComponent };

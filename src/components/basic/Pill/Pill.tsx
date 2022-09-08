@@ -1,4 +1,4 @@
-import * as SC from "./styles";
+import * as SC from "./Pill.styles";
 
 function Pill(props: PillProps) {
   const { label } = props;

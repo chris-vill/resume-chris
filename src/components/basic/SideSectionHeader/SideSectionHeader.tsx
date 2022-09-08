@@ -1,4 +1,4 @@
-import * as SC from "./styles/index";
+import * as SC from "./SideSectionHeader.styles";
 
 function SideSectionHeader(props: SideSectionHeaderProps) {
   const { label } = props;
@@ -7,7 +7,7 @@ function SideSectionHeader(props: SideSectionHeaderProps) {
     <>
       <SC.Container>
         <SC.Divider />
-        <SC.Header>{label}</SC.Header>
+        <SC.Label>{label}</SC.Label>
       </SC.Container>
     </>
   );

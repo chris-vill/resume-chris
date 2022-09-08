@@ -1,4 +1,4 @@
-import * as SC from "./styles";
+import * as SC from "./PillsSection.style";
 import { Pill, SideSectionHeader } from "@components";
 
 function PillsSection(props: PillsSectionProps) {

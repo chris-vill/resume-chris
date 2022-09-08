@@ -1,4 +1,4 @@
-import * as SC from "./styles";
+import * as SC from "./ContactsSection.styles";
 import { ContactItem } from "@components";
 import type * as T from "@types";
 

@@ -1,4 +1,4 @@
-import * as SC from "./styles";
+import * as SC from "./ContactItem.styles";
 import { Icon } from "@components";
 import { IconKeys } from "@types";
 
@@ -13,7 +13,7 @@ function ContactItem(props: ContactItemProps) {
         </SC.IconContainer>
         <SC.LabelsContainer>
           <SC.Label>{label}</SC.Label>
-          {link === null && <SC.SubLabel>{value}</SC.SubLabel>}
+          {link === null && <SC.Sublabel>{value}</SC.Sublabel>}
           {link !== null && (
             <SC.Link href={link} target="_blank">
               {value}

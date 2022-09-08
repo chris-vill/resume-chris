@@ -1,6 +1,9 @@
+import styled from "@emotion/styled";
+
 import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
-import styled from "@emotion/styled";
+
+const baseClassName = "experience-item";
 
 const Container = createStyledComponent<ContainerProps, HTMLDivElement>(
   "experience-item-container",

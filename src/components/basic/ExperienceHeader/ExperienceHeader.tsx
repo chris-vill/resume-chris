@@ -1,4 +1,4 @@
-import * as SC from "./styles";
+import * as SC from "./ExperienceHeader.styles";
 import { Icon } from "@components";
 
 function ExperienceHeader(props: ExperienceHeaderProps) {
@@ -8,7 +8,7 @@ function ExperienceHeader(props: ExperienceHeaderProps) {
     <>
       <SC.Container>
         <Icon as="star" />
-        <SC.LabelsContainer>
+        <div>
           <SC.Label>
             <h4>{title}</h4>
             <h4> @ {company}</h4>
@@ -17,7 +17,7 @@ function ExperienceHeader(props: ExperienceHeaderProps) {
             <span>{date}</span>
             <span> ~ {location}</span>
           </SC.Sublabel>
-        </SC.LabelsContainer>
+        </div>
       </SC.Container>
     </>
   );
