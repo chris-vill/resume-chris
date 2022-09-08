@@ -15,7 +15,8 @@
       "@components": ["components/index"],
       "@constants": ["constants/index"],
       "@styles": ["styles/index"],
-      "@types": ["types/index"]
+      "@types": ["types/index"],
+      "@utils": ["utils/index"]
     },
     "resolveJsonModule": true,
     "skipDefaultLibCheck": true,

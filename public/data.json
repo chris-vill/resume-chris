@@ -39,7 +39,7 @@
       "company": "SwapooLabs",
       "date": "6/2021 - 08/2022",
       "location": "Taguig City, Philippines",
-      "points": [
+      "details": [
         "Created and managed 12 custom policies in Azure AD B2C (Identity Framework) for implementing SSO across 2 major products",
         "Implemented usage of Storybook that documented 100% of all components in the codebase",
         "Refactored roughly 90% of Frontend codebase to follow Atomic Design which is highly recommended when using Storybook",
@@ -52,7 +52,7 @@
       "company": "SugarCRM",
       "date": "3/2019 - 9/2020",
       "location": "Quezon City, Philippines (Remote)",
-      "points": [
+      "details": [
         "Contributed roughly 40% to the development of Sugar Connect (version 2 of Collabspot Classic)",
         "Created an end-to-end test automation with roughly 25% coverage as a proof of concept using Protractor",
         "Continuation of responsibilities from Collabspot, as the company has been acquired by SugarCRM"
@@ -63,7 +63,7 @@
       "company": "Collabspot",
       "date": "5/2015 - 3/2019",
       "location": "Quezon City, Philippines (Remote)",
-      "points": [
+      "details": [
         "Maintained 4 versions of Collabspot Classic (Collabspot for Sugar 7+, Collabspot for Sugar 6, Collabspot for Salesforce, Collabspot for Highrise)",
         "Implemented feature requests from several users both regular and VIP (Gordon Foods, Epidemic Sound, Sanmina, etc.)"
       ]
@@ -114,7 +114,7 @@
       "name": "My Resume",
       "repository": "github.com/chris-vill/resume-chris",
       "design": "figma.com/file/p8V2utLD1a3oN9ujXemCug/Resume",
-      "points": [
+      "details": [
         "This project contains the codebase for this resume",
         "The purpose of this project is to sharpen my skills in codebase architecture, use of Storybook, styled components, Atomic Design principles and also improve my understanding of basic UI/UX design",
         "Technologies: TypeScript, React.js, Next.js, Storybook, Emotion, Atomic Design, Figma"

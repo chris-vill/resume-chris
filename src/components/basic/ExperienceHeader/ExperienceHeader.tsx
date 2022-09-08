@@ -25,7 +25,7 @@ function ExperienceHeader(props: ExperienceHeaderProps) {
 
 export { ExperienceHeader };
 
-type ExperienceHeaderProps = {
+export type ExperienceHeaderProps = {
   company: string;
   date: string;
   location: string;

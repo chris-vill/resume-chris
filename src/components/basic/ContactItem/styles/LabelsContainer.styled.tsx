@@ -5,6 +5,7 @@ function LabelsContainer(P: LabelsContainerProps) {
   const Parent = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
   `;
 
   return (
