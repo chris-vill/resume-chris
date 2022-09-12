@@ -3,6 +3,7 @@ import { Global } from "@emotion/react";
 
 import { globalStyles } from "@styles";
 
+//@ts-ignore
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -18,3 +19,4 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+

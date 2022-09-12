@@ -17,7 +17,7 @@ function EducationHeader(props: EducationHeaderProps) {
 
 export { EducationHeader };
 
-type EducationHeaderProps = {
+export type EducationHeaderProps = {
   course: string;
   institution: string;
   location: string;

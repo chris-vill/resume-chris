@@ -1,42 +1,52 @@
-import styled from "@emotion/styled";
+import type { HTMLAttributes } from "react";
+
+import { css } from "@emotion/react";
 
 import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
 
-const baseClassName = "experience-item";
-
-const Container = createStyledComponent<ContainerProps, HTMLDivElement>(
-  "experience-item-container",
-  styled.div``
+const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
+  "div.experience-item-container",
+  (P) => ({
+    base: css``,
+  })
 );
 
-const Detail = createStyledComponent<DetailProps, HTMLLIElement>(
-  "experience-item-detail",
-  styled.li`
-    ${fonts.itemBody}
+const Detail = createStyledComponent<DetailProps, HTMLAttributes<HTMLLIElement>>(
+  "li.experience-item-detail",
+  (P) => ({
+    base: css`
+      ${fonts.itemBody}
 
-    &:not(:last-child) {
-      margin-bottom: 2px;
-    }
+      display: flex;
 
-    &::before {
-      background-color: var(--clr-primary);
-      border-radius: 50%;
-      content: "";
-      display: inline-block;
-      height: 6px;
-      margin-right: 8px;
-      width: 6px;
-    }
-  `
+      &:not(:last-child) {
+        margin-bottom: 2px;
+      }
+
+      &::before {
+        background-color: var(--clr-primary);
+        border-radius: 50%;
+        content: "";
+        display: inline-block;
+        flex-shrink: 0;
+        height: 6px;
+        margin-right: 8px;
+        margin-top: 2px;
+        width: 6px;
+      }
+    `,
+  })
 );
 
-const DetailsList = createStyledComponent<DetailsListProps, HTMLUListElement>(
-  "experience-item-details-list",
-  styled.ul`
-    margin-left: 26px;
-    margin-top: 6px;
-  `
+const DetailsList = createStyledComponent<DetailsListProps, HTMLAttributes<HTMLUListElement>>(
+  "ul.experience-item-details-list",
+  (P) => ({
+    base: css`
+      margin-left: 28px;
+      margin-top: 6px;
+    `,
+  })
 );
 
 export { Container, Detail, DetailsList };

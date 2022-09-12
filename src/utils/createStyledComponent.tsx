@@ -1,5 +1,6 @@
-import { StyledComponent as TStyledComponent } from "@emotion/styled";
-import type { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react";
+import { css, SerializedStyles } from "@emotion/react";
+import styled from "@emotion/styled";
+import type { HTMLAttributes, ReactNode } from "react";
 
 /*
   NOTE:
@@ -8,20 +9,60 @@ import type { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react";
   link to bug: https://github.com/bashmish/es6-string-css/issues/6
 */
 
-function createStyledComponent<P, HE, HA extends HTMLAttributes<HE> = HTMLAttributes<HE>>(
-  className: string,
-  /*
-    FIXME:
-      turn this:
-        DetailedHTMLProps<HTMLAttributes<HE>, HE>
-      to this:
-        DetailedHTMLProps<HA, HE>
-  */
-  StyledComponent: TStyledComponent<{}, DetailedHTMLProps<HTMLAttributes<HE>, HE>, {}>,
+function createStyledComponent<
+  P,
+  HA extends HTMLAttributes<HTMLElement> = HTMLAttributes<HTMLElement>
+>(
+  name: `${keyof JSX.IntrinsicElements}.${string}`,
+  styles: (props: P) => {
+    base: SerializedStyles;
+    visited?: SerializedStyles;
+    focus?: SerializedStyles;
+    hover?: SerializedStyles;
+    active?: SerializedStyles;
+    checked?: SerializedStyles;
+    disabled?: SerializedStyles;
+  },
   selfClosing: boolean = false
 ) {
+  const [tagName, className] = name.split(".");
+
   return (props: StyledComponentProps) => {
     const { children, ...otherProps } = props;
+    const stylesObj = styles(props);
+
+    //@ts-ignore
+    const StyledComponent = styled[tagName](() => {
+      const { base, visited, focus, hover, active, checked, disabled } = stylesObj;
+
+      return css`
+        ${base}
+
+        &:visited {
+          ${visited}
+        }
+
+        &:focus {
+          ${focus}
+        }
+
+        &:hover {
+          ${hover}
+        }
+
+        &:active {
+          ${active}
+        }
+
+        &:checked {
+          ${checked}
+        }
+
+        &:disabled {
+          ${disabled}
+        }
+      `;
+    });
 
     return (
       <>

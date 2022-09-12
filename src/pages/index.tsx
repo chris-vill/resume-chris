@@ -1,13 +1,31 @@
-import { Icons } from "@components";
+import type { GetStaticProps } from "next";
 
-export default function Home() {
+import type * as T from "@types";
+
+import { Page } from "@components";
+
+export default function Home(props: HomeProps) {
   return (
     <>
-      {/* <Page.HomePage /> */}
-      <Icons />
+      <Page.Home {...props.data} />
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const response = await fetch(`http://localhost:3000/data.json`);
+  const data = await response.json();
+
+  return {
+    props: {
+      data,
+    },
+  };
+};
+
+type HomeProps = {
+  data: T.HomePageProps;
+};
 
 /*
   Resume

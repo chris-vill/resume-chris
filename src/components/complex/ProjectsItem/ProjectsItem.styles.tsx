@@ -1,43 +1,55 @@
-import styled from "@emotion/styled";
+import type { HTMLAttributes } from "react";
+
+import { css } from "@emotion/react";
 
 import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
 
-const Container = createStyledComponent<ContainerProps, HTMLDivElement>(
-  "projects-item-container",
-  styled.div`
-    display: flex;
-    flex-direction: column;
-  `
+const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
+  "div.projects-item-container",
+  (P) => ({
+    base: css`
+      display: flex;
+      flex-direction: column;
+    `,
+  })
 );
 
-const Detail = createStyledComponent<DetailProps, HTMLLIElement>(
-  "projects-item-detail",
-  styled.li`
-    ${fonts.itemBody}
+const Detail = createStyledComponent<DetailProps, HTMLAttributes<HTMLLIElement>>(
+  "li.projects-item-detail",
+  (P) => ({
+    base: css`
+      ${fonts.itemBody}
 
-    &:not(:last-child) {
-      margin-bottom: 2px;
-    }
+      display: flex;
 
-    &::before {
-      background-color: var(--clr-primary);
-      border-radius: 50%;
-      content: "";
-      display: inline-block;
-      height: 6px;
-      margin-right: 8px;
-      width: 6px;
-    }
-  `
+      &:not(:last-child) {
+        margin-bottom: 2px;
+      }
+
+      &::before {
+        background-color: var(--clr-primary);
+        border-radius: 50%;
+        content: "";
+        display: inline-block;
+        flex-shrink: 0;
+        height: 6px;
+        margin-right: 8px;
+        margin-top: 2px;
+        width: 6px;
+      }
+    `,
+  })
 );
 
-const DetailsList = createStyledComponent<DetailsListProps, HTMLUListElement>(
-  "projects-item-details-list",
-  styled.ul`
-    margin-left: 26px;
-    margin-top: 6px;
-  `
+const DetailsList = createStyledComponent<DetailsListProps, HTMLAttributes<HTMLUListElement>>(
+  "ul.projects-item-details-list",
+  (P) => ({
+    base: css`
+      margin-left: 28px;
+      margin-top: 6px;
+    `,
+  })
 );
 
 export { Container, Detail, DetailsList };

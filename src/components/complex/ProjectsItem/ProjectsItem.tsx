@@ -22,7 +22,7 @@ function ProjectsItem(props: ProjectsItemProps) {
 
 export { ProjectsItem };
 
-type ProjectsItemProps = T.ProjectsHeaderProps & {
+export type ProjectsItemProps = T.ProjectsHeaderProps & {
   details: string[];
 };
 

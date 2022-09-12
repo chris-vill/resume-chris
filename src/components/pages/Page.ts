@@ -1,7 +1,8 @@
 import { HomePage } from "./HomePage/HomePage";
 
-const Pages = {
-  HomePage,
+const Page = {
+  Home: HomePage,
 };
 
-export { Pages };
+export { Page };
+

@@ -3,6 +3,7 @@
 const nextConfig = {
   env: {
     URL_CLIENT: "http://localhost:3000",
+    URL_SERVER: "http://localhost:3000",
   },
   reactStrictMode: true,
   swcMinify: true,

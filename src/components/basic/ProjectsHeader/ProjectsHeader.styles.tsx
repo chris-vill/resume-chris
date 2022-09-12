@@ -1,55 +1,62 @@
-import styled from "@emotion/styled";
-import { AnchorHTMLAttributes } from "react";
+import type { AnchorHTMLAttributes, HTMLAttributes } from "react";
+
+import { css } from "@emotion/react";
 
 import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
 
-const Container = createStyledComponent<ContainerProps, HTMLDivElement>(
-  "projects-header-container",
-  styled.div`
-    display: flex;
-    gap: 8px;
-  `
+const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
+  "div.projects-header-container",
+  (P) => ({
+    base: css`
+      display: flex;
+      gap: 8px;
+    `,
+  })
 );
 
-const Detail = createStyledComponent<DetailProps, HTMLSpanElement>(
-  "projects-header-detail",
-  styled.span`
-    ${fonts.itemSubheader}
+const Detail = createStyledComponent<DetailProps, HTMLAttributes<HTMLSpanElement>>(
+  "span.projects-header-detail",
+  (P) => ({
+    base: css`
+      ${fonts.itemSubheader}
 
-    color: var(--clr-accent);
-  `
+      color: var(--clr-accent);
+    `,
+  })
 );
 
-const Label = createStyledComponent<LabelProps, HTMLHeadingElement>(
-  "projects-header-container",
-  styled.h4`
-    ${fonts.itemHeader}
+const Label = createStyledComponent<LabelProps, HTMLAttributes<HTMLHeadingElement>>(
+  "h4.projects-header-container",
+  (P) => ({
+    base: css`
+      ${fonts.itemHeader}
 
-    color: var(--clr-primary-s20);
-  `
+      color: var(--clr-primary-s20);
+    `,
+  })
 );
 
-const Link = createStyledComponent<
-  LinkProps,
-  HTMLAnchorElement,
-  AnchorHTMLAttributes<HTMLAnchorElement>
->(
-  "projects-header-container",
-  styled.a`
-    ${fonts.itemSubheader}
+const Link = createStyledComponent<LinkProps, AnchorHTMLAttributes<HTMLAnchorElement>>(
+  "a.projects-header-container",
+  (P) => ({
+    base: css`
+      ${fonts.itemSubheader}
 
-    color: var(--clr-link);
-  `
+      color: var(--clr-link);
+    `,
+  })
 );
 
-const TextsContainer = createStyledComponent<TextsContainerProps, HTMLDivElement>(
-  "projects-header-container",
-  styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-top: 4px;
-  `
+const TextsContainer = createStyledComponent<TextsContainerProps, HTMLAttributes<HTMLDivElement>>(
+  "div.projects-header-container",
+  (P) => ({
+    base: css`
+      display: flex;
+      flex-direction: column;
+      margin-top: 4px;
+    `,
+  })
 );
 
 export { Container, Detail, Label, Link, TextsContainer };
