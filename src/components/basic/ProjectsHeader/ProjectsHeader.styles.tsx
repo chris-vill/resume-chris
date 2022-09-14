@@ -6,7 +6,7 @@ import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
-  "div.projects-header-container",
+  "div.projects-header_container",
   (P) => ({
     base: css`
       display: flex;
@@ -16,7 +16,7 @@ const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivEl
 );
 
 const Detail = createStyledComponent<DetailProps, HTMLAttributes<HTMLSpanElement>>(
-  "span.projects-header-detail",
+  "span.projects-header_detail",
   (P) => ({
     base: css`
       ${fonts.itemSubheader}
@@ -27,7 +27,7 @@ const Detail = createStyledComponent<DetailProps, HTMLAttributes<HTMLSpanElement
 );
 
 const Label = createStyledComponent<LabelProps, HTMLAttributes<HTMLHeadingElement>>(
-  "h4.projects-header-container",
+  "h4.projects-header_container",
   (P) => ({
     base: css`
       ${fonts.itemHeader}
@@ -38,7 +38,7 @@ const Label = createStyledComponent<LabelProps, HTMLAttributes<HTMLHeadingElemen
 );
 
 const Link = createStyledComponent<LinkProps, AnchorHTMLAttributes<HTMLAnchorElement>>(
-  "a.projects-header-container",
+  "a.projects-header_container",
   (P) => ({
     base: css`
       ${fonts.itemSubheader}

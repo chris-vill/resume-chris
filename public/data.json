@@ -1,6 +1,7 @@
 {
   "name": "Christopher Villaran",
-  "role": "Senior Fullstack Web Developer",
+  "role": "Fullstack Web Developer",
+  "description": "A passionate web developer who's constantly learning new skills, trying out new technologies and keeping up to date with the latest trend in the industry. Started out as a Frontend Web Developer then transitioned to being a Fullstack Web Developer with senior level knowledge on the Frontend side while having junior level skills on the Backend side while being able to gather knowledge in Software Architecture, Design Patterns, Agile Scrum and many more. Enthusiastic in taking on new and exciting challenges that will help me further progress with my career while lending a hand to companies facing said challenges.",
   "contacts": [
     {
       "label": "LinkedIn",
@@ -75,39 +76,40 @@
     "JavaScript",
     "React.js",
     "HTML 5",
-    "CSS 3",
+    "Postman",
     "Next.js",
     "Chakra UI",
     "Sass",
     "Styled Components",
-    "TypeScript",
+    "CSS 3",
     "Storybook",
-    "Postman",
-    "REST",
-    "Azure AD B2C (Identity Framework)",
-    "Marionette.js",
+    "TypeScript",
+    "Azure AD B2C",
     "SugarCRM API",
+    "Marionette.js",
+    "Backbone.js",
     "Chrome Extensions",
-    "Backbone.js"
+    "REST",
+    "Python 3",
+    "FastAPI"
   ],
-  "technnical_skills": [
+  "technical_skills": [
     "Source Control Management",
-    "Agile",
     "Functional Programming",
-    "Scrum",
     "Design Patterns",
-    "Software Testing"
+    "Scrum",
+    "Software Testing",
+    "Agile"
   ],
   "soft_skills": [
     "Patience",
+    "Approachability",
     "Creativity",
-    "Adaptability",
     "Critical Thinking",
     "Inquisitiveness",
-    "Approachability",
-    "Accountability",
-    "Communication",
-    "Collaboration"
+    "Adaptability",
+    "Collaboration",
+    "Accountability"
   ],
   "projects": [
     {
@@ -123,7 +125,7 @@
   ],
   "education": [
     {
-      "title": "Bachelor of Science in Computer Engineering",
+      "course": "Bachelor of Science in Computer Engineering",
       "institution": "Polytechnic University of the Philippines",
       "date": "6/2009 - 4/2015",
       "location": "Sta. Mesa, Manila"

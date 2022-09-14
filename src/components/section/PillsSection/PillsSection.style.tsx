@@ -5,7 +5,7 @@ import { css } from "@emotion/react";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
-  "div.pills-section-container",
+  "div.pills-section_container",
   (P) => ({
     base: css`
       display: flex;
@@ -15,14 +15,14 @@ const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivEl
 );
 
 const Pills = createStyledComponent<PillsProps, HTMLAttributes<HTMLDivElement>>(
-  "div.pills-section-pills",
+  "div.pills-section_pills",
   (P) => ({
     base: css`
       display: flex;
       flex-direction: row-reverse;
       flex-wrap: wrap;
       gap: 4px;
-      padding: 6px;
+      padding: 6px 12px 12px 24px;
     `,
   })
 );

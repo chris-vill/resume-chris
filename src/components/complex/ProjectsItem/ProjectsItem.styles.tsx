@@ -6,7 +6,7 @@ import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
-  "div.projects-item-container",
+  "div.projects-item_container",
   (P) => ({
     base: css`
       display: flex;
@@ -16,7 +16,7 @@ const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivEl
 );
 
 const Detail = createStyledComponent<DetailProps, HTMLAttributes<HTMLLIElement>>(
-  "li.projects-item-detail",
+  "li.projects-item_detail",
   (P) => ({
     base: css`
       ${fonts.itemBody}
@@ -43,7 +43,7 @@ const Detail = createStyledComponent<DetailProps, HTMLAttributes<HTMLLIElement>>
 );
 
 const DetailsList = createStyledComponent<DetailsListProps, HTMLAttributes<HTMLUListElement>>(
-  "ul.projects-item-details-list",
+  "ul.projects-item_details-list",
   (P) => ({
     base: css`
       margin-left: 28px;

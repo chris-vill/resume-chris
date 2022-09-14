@@ -35,6 +35,10 @@ const globalStyles = css`
     box-sizing: border-box;
   }
 
+  #__next {
+    overflow: auto;
+  }
+
   @media (prefers-color-scheme: dark) {
     html {
       /* color-scheme: dark; */

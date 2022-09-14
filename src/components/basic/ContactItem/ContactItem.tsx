@@ -8,9 +8,6 @@ function ContactItem(props: ContactItemProps) {
   return (
     <>
       <SC.Container>
-        <SC.IconContainer>
-          <Icon as={type} />
-        </SC.IconContainer>
         <SC.LabelsContainer>
           <SC.Label>{label}</SC.Label>
           {link === null && <SC.Sublabel>{value}</SC.Sublabel>}
@@ -20,6 +17,9 @@ function ContactItem(props: ContactItemProps) {
             </SC.Link>
           )}
         </SC.LabelsContainer>
+        <SC.IconContainer>
+          <Icon as={type} />
+        </SC.IconContainer>
       </SC.Container>
     </>
   );

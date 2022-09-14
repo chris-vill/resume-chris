@@ -6,7 +6,7 @@ import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
-  "div.experience-header-container",
+  "div.experience-header_container",
   (P) => ({
     base: css`
       display: flex;
@@ -16,7 +16,7 @@ const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivEl
 );
 
 const Label = createStyledComponent<LabelProps, HTMLAttributes<HTMLDivElement>>(
-  "div.experience-header-label",
+  "div.experience-header_label",
   (P) => ({
     base: css`
       h4 {
@@ -36,7 +36,7 @@ const Label = createStyledComponent<LabelProps, HTMLAttributes<HTMLDivElement>>(
 );
 
 const Sublabel = createStyledComponent<SublabelProps, HTMLAttributes<HTMLDivElement>>(
-  "div.experience-header-sublabel",
+  "div.experience-header_sublabel",
   (P) => ({
     base: css`
       span {

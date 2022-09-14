@@ -6,7 +6,7 @@ import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
-  "div.side-section-header-container",
+  "div.side-section-header_container",
   (P) => ({
     base: css`
       align-items: center;
@@ -16,7 +16,7 @@ const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivEl
 );
 
 const Divider = createStyledComponent<DividerProps, HTMLAttributes<HTMLHRElement>>(
-  "hr.side-section-header-divider",
+  "hr.side-section-header_divider",
   (P) => ({
     base: css`
       background-color: var(--clr-primary);
@@ -28,7 +28,7 @@ const Divider = createStyledComponent<DividerProps, HTMLAttributes<HTMLHRElement
 );
 
 const Label = createStyledComponent<LabelProps, HTMLAttributes<HTMLDivElement>>(
-  "div.side-section-header-container",
+  "div.side-section-header_container",
   (P) => ({
     base: css`
       ${fonts.sectionHeader}

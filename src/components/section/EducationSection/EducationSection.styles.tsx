@@ -5,17 +5,9 @@ import { css } from "@emotion/react";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
-  "div.contacts-section_container",
+  "div.education-section_container",
   (P) => ({
-    base: css`
-      align-items: flex-end;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 8px;
-      /* height: 100%; */
-      padding: 12px;
-    `,
+    base: css``,
   })
 );
 

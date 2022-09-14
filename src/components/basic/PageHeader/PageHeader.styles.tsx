@@ -6,7 +6,7 @@ import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
-  "div.page-header-container",
+  "div.page-header_container",
   (P) => ({
     base: css`
       background-color: var(--clr-primary);
@@ -15,13 +15,14 @@ const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivEl
       display: flex;
       flex-direction: column;
       gap: 2px;
+      max-width: max-content;
       padding: 18px 64px;
     `,
   })
 );
 
 const Title = createStyledComponent<TitleProps, HTMLAttributes<HTMLDivElement>>(
-  "div.page-header-title",
+  "div.page-header_title",
   (P) => ({
     base: css`
       ${fonts.pageHeader}
@@ -33,7 +34,7 @@ const Title = createStyledComponent<TitleProps, HTMLAttributes<HTMLDivElement>>(
 );
 
 const Subtitle = createStyledComponent<SubtitleProps, HTMLAttributes<HTMLDivElement>>(
-  "div.page-header-subtitle",
+  "div.page-header_subtitle",
   (P) => ({
     base: css`
       ${fonts.pageSubheader}

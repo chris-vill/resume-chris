@@ -9,12 +9,12 @@ function ProjectsSection(props: ProjectsSectionProps) {
   return (
     <>
       <SC.Container>
-        <MainSectionHeader label="Projects" />
-        <SC.ProjectsContainer>
+        <MainSectionHeader label="Side Projects" />
+        <SC.Projects>
           {projects.map((project) => (
             <ProjectsItem {...project} />
           ))}
-        </SC.ProjectsContainer>
+        </SC.Projects>
       </SC.Container>
     </>
   );

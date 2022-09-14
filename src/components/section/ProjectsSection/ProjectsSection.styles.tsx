@@ -5,7 +5,7 @@ import { css } from "@emotion/react";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, HtmlHTMLAttributes<HTMLDivElement>>(
-  "div.projects-section-container",
+  "div.projects-section_container",
   () => ({
     base: css`
       display: flex;
@@ -14,20 +14,20 @@ const Container = createStyledComponent<ContainerProps, HtmlHTMLAttributes<HTMLD
   })
 );
 
-const ProjectsContainer = createStyledComponent<
-  ProjectsContainerProps,
-  HTMLAttributes<HTMLDivElement>
->("div.experience-section-container", () => ({
-  base: css`
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 6px;
-  `,
-}));
+const Projects = createStyledComponent<ProjectsProps, HTMLAttributes<HTMLDivElement>>(
+  "div.projects-section_container",
+  () => ({
+    base: css`
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 12px 24px 12px 12px;
+    `,
+  })
+);
 
-export { Container, ProjectsContainer };
+export { Container, Projects };
 
 type ContainerProps = {};
-type ProjectsContainerProps = {};
+type ProjectsProps = {};
 

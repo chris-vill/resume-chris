@@ -5,7 +5,7 @@ import { css } from "@emotion/react";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, ImgHTMLAttributes<HTMLImageElement>>(
-  "img.icon-container",
+  "img.icon_container",
   (P) => ({
     base: css`
       height: 20px;

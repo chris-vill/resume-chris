@@ -10,11 +10,11 @@ function ExperienceSection(props: ExperienceSectionProps) {
     <>
       <SC.Container>
         <MainSectionHeader label="Experience" />
-        <SC.ExperienceContainer>
+        <SC.Experiences>
           {experience.map((exp) => (
             <ExperienceItem {...exp} />
           ))}
-        </SC.ExperienceContainer>
+        </SC.Experiences>
       </SC.Container>
     </>
   );

@@ -9,8 +9,8 @@ function PillsSection(props: PillsSectionProps) {
       <SC.Container>
         <SideSectionHeader {...{ label }} />
         <SC.Pills>
-          {items.map((item) => (
-            <Pill label={item} />
+          {items.map((item, i) => (
+            <Pill label={item} key={i} />
           ))}
         </SC.Pills>
       </SC.Container>

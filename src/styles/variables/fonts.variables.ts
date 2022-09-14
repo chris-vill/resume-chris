@@ -15,7 +15,7 @@ export const fonts = css`
   --fz-section-header: 12px;
   --fz-item-header: 12px;
   --fz-item-subheader: 12px;
-  --fz-item-body: 10px;
+  --fz-item-body: 11px;
   --fz-date: 12px;
   --fz-pill: 10px;
 
@@ -42,7 +42,7 @@ export const fonts = css`
   --lh-section-header: 14px;
   --lh-item-header: 14px;
   --lh-item-subheader: 14px;
-  --lh-item-body: 11px;
+  --lh-item-body: 14px;
   --lh-date: 14px;
   --lh-pill: 11px;
 

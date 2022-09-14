@@ -6,12 +6,17 @@ import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
-  "div.education-header-container",
+  "div.education-header_container",
   (P) => ({
     base: css`
       align-items: flex-end;
       display: flex;
       flex-direction: column;
+      padding: 6px 12px 12px 12px;
+
+      & * {
+        text-align: right;
+      }
 
       h4 {
         ${fonts.itemHeader}
@@ -23,7 +28,7 @@ const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivEl
 );
 
 const Date = createStyledComponent<DateProps, HTMLAttributes<HTMLSpanElement>>(
-  "span.education-header-date",
+  "span.education-header_date",
   (P) => ({
     base: css`
       ${fonts.date}
@@ -34,7 +39,7 @@ const Date = createStyledComponent<DateProps, HTMLAttributes<HTMLSpanElement>>(
 );
 
 const Detail = createStyledComponent<DetailProps, HTMLAttributes<HTMLSpanElement>>(
-  "span.education-header-detail",
+  "span.education-header_detail",
   (P) => ({
     base: css`
       ${fonts.itemSubheader}

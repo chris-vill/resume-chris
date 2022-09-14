@@ -6,7 +6,7 @@ import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLHeadingElement>>(
-  "h5.pill-container",
+  "h5.pill_container",
   (P) => ({
     base: css`
       ${fonts.pill}

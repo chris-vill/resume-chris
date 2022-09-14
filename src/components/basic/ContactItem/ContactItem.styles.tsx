@@ -6,7 +6,7 @@ import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
-  "div.contact-item-container",
+  "div.contact-item_container",
   (P) => ({
     base: css`
       display: flex;
@@ -18,7 +18,7 @@ const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivEl
 );
 
 const IconContainer = createStyledComponent<IconContainerProps, HTMLAttributes<HTMLDivElement>>(
-  "div.contact-item-icon-container",
+  "div.contact-item_icon-container",
   (P) => ({
     base: css`
       align-items: center;
@@ -33,7 +33,7 @@ const IconContainer = createStyledComponent<IconContainerProps, HTMLAttributes<H
 );
 
 const Label = createStyledComponent<LabelProps, HTMLAttributes<HTMLHeadingElement>>(
-  "h4.ontact-item-label",
+  "h4.ocntact-item_label",
   (P) => ({
     base: css`
       ${fonts.itemHeader}
@@ -44,18 +44,22 @@ const Label = createStyledComponent<LabelProps, HTMLAttributes<HTMLHeadingElemen
 );
 
 const LabelsContainer = createStyledComponent<LabelsContainerProps, HTMLAttributes<HTMLDivElement>>(
-  "div.contact-item-labels-container",
+  "div.contact-item_labels-container",
   (P) => ({
     base: css`
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      & > * {
+        text-align: right;
+      }
     `,
   })
 );
 
 const Link = createStyledComponent<LinkProps, AnchorHTMLAttributes<HTMLAnchorElement>>(
-  "a.contact-item-link",
+  "a.contact-item_link",
   (P) => ({
     base: css`
       ${fonts.itemSubheader}
@@ -66,7 +70,7 @@ const Link = createStyledComponent<LinkProps, AnchorHTMLAttributes<HTMLAnchorEle
 );
 
 const Sublabel = createStyledComponent<SublabelProps, HTMLAttributes<HTMLSpanElement>>(
-  "span.contact-item-sublabel",
+  "span.contact-item_sublabel",
   (P) => ({
     base: css`
       ${fonts.itemSubheader}

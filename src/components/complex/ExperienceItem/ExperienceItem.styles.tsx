@@ -6,14 +6,14 @@ import { fonts } from "@styles";
 import { createStyledComponent } from "@utils";
 
 const Container = createStyledComponent<ContainerProps, HTMLAttributes<HTMLDivElement>>(
-  "div.experience-item-container",
+  "div.experience-item_container",
   (P) => ({
     base: css``,
   })
 );
 
 const Detail = createStyledComponent<DetailProps, HTMLAttributes<HTMLLIElement>>(
-  "li.experience-item-detail",
+  "li.experience-item_detail",
   (P) => ({
     base: css`
       ${fonts.itemBody}
@@ -40,7 +40,7 @@ const Detail = createStyledComponent<DetailProps, HTMLAttributes<HTMLLIElement>>
 );
 
 const DetailsList = createStyledComponent<DetailsListProps, HTMLAttributes<HTMLUListElement>>(
-  "ul.experience-item-details-list",
+  "ul.experience-item_details-list",
   (P) => ({
     base: css`
       margin-left: 28px;
